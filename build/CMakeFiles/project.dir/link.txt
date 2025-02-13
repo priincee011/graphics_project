@@ -1,0 +1,3 @@
+D:\Cmake\bin\cmake.exe -E rm -f CMakeFiles\project.dir/objects.a
+C:\mingw64\bin\ar.exe qc CMakeFiles\project.dir/objects.a @CMakeFiles\project.dir\objects1.rsp
+g++  -m64 -fno-rtti -fno-exceptions -Wno-error  -Wwrite-strings -Wno-narrowing -fpermissive -g -Wl,--whole-archive CMakeFiles\project.dir/objects.a -Wl,--no-whole-archive -o project.exe -Wl,--out-implib,libproject.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\project.dir\linkLibs.rsp

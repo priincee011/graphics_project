@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libsimulator.a CMakeFiles/simulator.dir/src/libbgi_src/drawing.cxx.obj CMakeFiles/simulator.dir/src/libbgi_src/misc.cxx.obj CMakeFiles/simulator.dir/src/libbgi_src/mouse.cxx.obj CMakeFiles/simulator.dir/src/libbgi_src/palette.cxx.obj CMakeFiles/simulator.dir/src/libbgi_src/text.cxx.obj CMakeFiles/simulator.dir/src/libbgi_src/winbgi.cxx.obj CMakeFiles/simulator.dir/src/libbgi_src/winthread.cxx.obj CMakeFiles/simulator.dir/src/libbgi_src/dibutil.cxx.obj CMakeFiles/simulator.dir/src/libbgi_src/file.cxx.obj
+C:\mingw64\bin\ranlib.exe libsimulator.a
