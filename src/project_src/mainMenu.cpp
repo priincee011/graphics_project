@@ -3,8 +3,7 @@
 
 
 mainMenu::mainMenu()
-    : maxx(getmaxx()),
-      maxy(getmaxy())
+    
 {
 }
 
@@ -15,6 +14,7 @@ mainMenu::~mainMenu()
 
 void mainMenu::displayMenu()
 {
+    maxx= getmaxx(), maxy = getmaxy();
     userInput userin;
     projectile p;
 

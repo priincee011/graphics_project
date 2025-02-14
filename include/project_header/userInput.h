@@ -11,8 +11,8 @@ class userInput{
    userInput();
     
     ~userInput();
-    double angle;
-    double speed;
+    float angle;
+    float speed;
     
     void getUserInput();
     

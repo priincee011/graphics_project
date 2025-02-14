@@ -10,7 +10,7 @@ bool userInput::checkButtonClick(int x, int y, int x1, int y1, int x2, int y2) {
 
 double userInput::getValue(char *str)
 { 
-    std::cout<<"getvalue is called"<<std::endl;
+    
     settextstyle(SANS_SERIF_FONT, HORIZ_DIR, 2);
     char valueStr[10]="";
     int index = 0;
@@ -47,7 +47,7 @@ void userInput::getUserInput()
     cleardevice();
     
     int x, y;
-   std::cout<<"user input is called"<<std::endl;
+   
     
     // Input for Speed
     this->speed= this->getValue(const_cast<char*>("Enter Initial Speed (m/s):"));
