@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = @CMakeFiles/simulator.dir/includes_CXX.rsp
 
-CXX_FLAGS =  -m64 -fno-rtti -fno-exceptions -Wno-error  -Wwrite-strings -Wno-narrowing -fpermissive -g -std=gnu++11
+CXX_FLAGS =  -m64 -fno-rtti -fno-exceptions -Wno-error  -Wwrite-strings -Wno-narrowing -fpermissive -O3 -DNDEBUG -std=gnu++11
 

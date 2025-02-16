@@ -7,23 +7,40 @@
 #include <cstdio>
 #include "userInput.h"
 
-#define G 9.81               // Gravity (m/s²)
-#define TIME_STEP 0.01      // Time step for simulation
-#define DRAG_COEFFICIENT 0.01 // Drag coefficient for a sphere
-#define RHO 1.225            // Air density (kg/m³)
-#define PROJECTILE_RADIUS 7   // Radius of projectile
 
-class projectile : public userInput{
-    private:
-    float x, y;
-    float vx, vy;
-    int maxx, maxy;
-    float initialvelocity, angle;
+#define PROJECTILE_RADIUS 5  // Define radius of the projectile
+#define G 9.8  // Gravitational acceleration
+#define RHO 1.225  // Air density at sea level (kg/m^3)
+#define DRAG_COEFFICIENT 0.47  // Drag coefficient for a sphere
 
-    public:
+class projectile {
+public:
     projectile();
     ~projectile();
-    void drawScene(int, int, float,float, float, float);
-    void simulateProjectile(float, float, int, int , bool);
+
+    // actual simulation function
+    void simulateProjectile(float initialv, float angle, int maxx, int maxy, bool withDrag);
+
+private:
+    double x, y, vx, vy;  // postion and velocity
+
+    // calculateScale function to calculate the scale factor for the simulation
+    double calculateScale(double value, int maxValue);
+
+    //applies drag force if user selects with drag
+    void applyDragForce(double);
+
+    // draws projectile on the screen (x,y )
+    void drawProjectile();
+
+    // display resulst in screen
+    void displayResults(double t, bool withDrag, double actualRange, double actualMaxHeight, double maxHeight, double range, int maxy, double yScale);
+
+    // draw scene with axes 
+    void drawScene(int maxx, int maxy, float maxHeight, float range, float xScale, float yScale);
+
+    // ticks on axes 
+    void drawTicks(int maxx, int groundY, float xScale, float yScale);
 };
-#endif
+
+#endif // PROJECTILE_H

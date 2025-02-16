@@ -4,11 +4,16 @@
 #include <conio.h> //kbhit
 #include <stdlib.h> //atof
 #include <mainMenu.h>
-
+#include <windows.h>
 
 int main() {
     int gd = DETECT, gm;
-    initgraph(&gd, &gm, NULL);
+    int screenwidth = GetSystemMetrics(SM_CXSCREEN);
+    int screenheight = GetSystemMetrics(SM_CYSCREEN);
+
+    initwindow(screenwidth, screenheight, "this is window");
+
+   // initgraph(&gd, &gm, NULL);
     mainMenu menu;
     
     menu.displayMenu();

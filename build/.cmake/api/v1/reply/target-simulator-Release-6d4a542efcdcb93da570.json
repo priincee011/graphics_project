@@ -43,7 +43,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -m64 -fno-rtti -fno-exceptions -Wno-error  -Wwrite-strings -Wno-narrowing -fpermissive -g -std=gnu++11"
+					"fragment" : " -m64 -fno-rtti -fno-exceptions -Wno-error  -Wwrite-strings -Wno-narrowing -fpermissive -O3 -DNDEBUG -std=gnu++11"
 				}
 			],
 			"includes" : 
