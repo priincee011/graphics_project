@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/CPP_Projects/ProjectileSimulator/src/project_src/main.cpp" "CMakeFiles/project.dir/src/project_src/main.cpp.obj" "gcc" "CMakeFiles/project.dir/src/project_src/main.cpp.obj.d"
-  "D:/CPP_Projects/ProjectileSimulator/src/project_src/mainMenu.cpp" "CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj" "gcc" "CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj.d"
-  "D:/CPP_Projects/ProjectileSimulator/src/project_src/projectile.cpp" "CMakeFiles/project.dir/src/project_src/projectile.cpp.obj" "gcc" "CMakeFiles/project.dir/src/project_src/projectile.cpp.obj.d"
-  "D:/CPP_Projects/ProjectileSimulator/src/project_src/userInput.cpp" "CMakeFiles/project.dir/src/project_src/userInput.cpp.obj" "gcc" "CMakeFiles/project.dir/src/project_src/userInput.cpp.obj.d"
+  "C:/Users/User/Documents/3rd sem/graphics_project/src/project_src/main.cpp" "CMakeFiles/project.dir/src/project_src/main.cpp.obj" "gcc" "CMakeFiles/project.dir/src/project_src/main.cpp.obj.d"
+  "C:/Users/User/Documents/3rd sem/graphics_project/src/project_src/mainMenu.cpp" "CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj" "gcc" "CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj.d"
+  "C:/Users/User/Documents/3rd sem/graphics_project/src/project_src/projectile.cpp" "CMakeFiles/project.dir/src/project_src/projectile.cpp.obj" "gcc" "CMakeFiles/project.dir/src/project_src/projectile.cpp.obj.d"
+  "C:/Users/User/Documents/3rd sem/graphics_project/src/project_src/userInput.cpp" "CMakeFiles/project.dir/src/project_src/userInput.cpp.obj" "gcc" "CMakeFiles/project.dir/src/project_src/userInput.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

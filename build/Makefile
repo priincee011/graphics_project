@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = D:\Cmake\bin\cmake.exe
+CMAKE_COMMAND = "C:\Users\User\Documents\3rd sem\cmake-3.31.5-windows-x86_64\cmake-3.31.5-windows-x86_64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = D:\Cmake\bin\cmake.exe -E rm -f
+RM = "C:\Users\User\Documents\3rd sem\cmake-3.31.5-windows-x86_64\cmake-3.31.5-windows-x86_64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\CPP_Projects\ProjectileSimulator
+CMAKE_SOURCE_DIR = "C:\Users\User\Documents\3rd sem\graphics_project"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\CPP_Projects\ProjectileSimulator\build
+CMAKE_BINARY_DIR = "C:\Users\User\Documents\3rd sem\graphics_project\build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = D:\CPP_Projects\ProjectileSimulator\build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	D:\Cmake\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Users\User\Documents\3rd sem\cmake-3.31.5-windows-x86_64\cmake-3.31.5-windows-x86_64\bin\cmake-gui.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	D:\Cmake\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Users\User\Documents\3rd sem\cmake-3.31.5-windows-x86_64\cmake-3.31.5-windows-x86_64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\CPP_Projects\ProjectileSimulator\build\CMakeFiles D:\CPP_Projects\ProjectileSimulator\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\User\Documents\3rd sem\graphics_project\build\CMakeFiles" "C:\Users\User\Documents\3rd sem\graphics_project\build\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\CPP_Projects\ProjectileSimulator\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\User\Documents\3rd sem\graphics_project\build\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target

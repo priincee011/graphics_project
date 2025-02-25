@@ -8,15 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/CPP_Projects/ProjectileSimulator/src/libbgi_src/dibutil.cxx" "CMakeFiles/simulator.dir/src/libbgi_src/dibutil.cxx.obj" "gcc" "CMakeFiles/simulator.dir/src/libbgi_src/dibutil.cxx.obj.d"
-  "D:/CPP_Projects/ProjectileSimulator/src/libbgi_src/drawing.cxx" "CMakeFiles/simulator.dir/src/libbgi_src/drawing.cxx.obj" "gcc" "CMakeFiles/simulator.dir/src/libbgi_src/drawing.cxx.obj.d"
-  "D:/CPP_Projects/ProjectileSimulator/src/libbgi_src/file.cxx" "CMakeFiles/simulator.dir/src/libbgi_src/file.cxx.obj" "gcc" "CMakeFiles/simulator.dir/src/libbgi_src/file.cxx.obj.d"
-  "D:/CPP_Projects/ProjectileSimulator/src/libbgi_src/misc.cxx" "CMakeFiles/simulator.dir/src/libbgi_src/misc.cxx.obj" "gcc" "CMakeFiles/simulator.dir/src/libbgi_src/misc.cxx.obj.d"
-  "D:/CPP_Projects/ProjectileSimulator/src/libbgi_src/mouse.cxx" "CMakeFiles/simulator.dir/src/libbgi_src/mouse.cxx.obj" "gcc" "CMakeFiles/simulator.dir/src/libbgi_src/mouse.cxx.obj.d"
-  "D:/CPP_Projects/ProjectileSimulator/src/libbgi_src/palette.cxx" "CMakeFiles/simulator.dir/src/libbgi_src/palette.cxx.obj" "gcc" "CMakeFiles/simulator.dir/src/libbgi_src/palette.cxx.obj.d"
-  "D:/CPP_Projects/ProjectileSimulator/src/libbgi_src/text.cxx" "CMakeFiles/simulator.dir/src/libbgi_src/text.cxx.obj" "gcc" "CMakeFiles/simulator.dir/src/libbgi_src/text.cxx.obj.d"
-  "D:/CPP_Projects/ProjectileSimulator/src/libbgi_src/winbgi.cxx" "CMakeFiles/simulator.dir/src/libbgi_src/winbgi.cxx.obj" "gcc" "CMakeFiles/simulator.dir/src/libbgi_src/winbgi.cxx.obj.d"
-  "D:/CPP_Projects/ProjectileSimulator/src/libbgi_src/winthread.cxx" "CMakeFiles/simulator.dir/src/libbgi_src/winthread.cxx.obj" "gcc" "CMakeFiles/simulator.dir/src/libbgi_src/winthread.cxx.obj.d"
+  "C:/Users/User/Documents/3rd sem/graphics_project/src/libbgi_src/dibutil.cxx" "CMakeFiles/simulator.dir/src/libbgi_src/dibutil.cxx.obj" "gcc" "CMakeFiles/simulator.dir/src/libbgi_src/dibutil.cxx.obj.d"
+  "C:/Users/User/Documents/3rd sem/graphics_project/src/libbgi_src/drawing.cxx" "CMakeFiles/simulator.dir/src/libbgi_src/drawing.cxx.obj" "gcc" "CMakeFiles/simulator.dir/src/libbgi_src/drawing.cxx.obj.d"
+  "C:/Users/User/Documents/3rd sem/graphics_project/src/libbgi_src/file.cxx" "CMakeFiles/simulator.dir/src/libbgi_src/file.cxx.obj" "gcc" "CMakeFiles/simulator.dir/src/libbgi_src/file.cxx.obj.d"
+  "C:/Users/User/Documents/3rd sem/graphics_project/src/libbgi_src/misc.cxx" "CMakeFiles/simulator.dir/src/libbgi_src/misc.cxx.obj" "gcc" "CMakeFiles/simulator.dir/src/libbgi_src/misc.cxx.obj.d"
+  "C:/Users/User/Documents/3rd sem/graphics_project/src/libbgi_src/mouse.cxx" "CMakeFiles/simulator.dir/src/libbgi_src/mouse.cxx.obj" "gcc" "CMakeFiles/simulator.dir/src/libbgi_src/mouse.cxx.obj.d"
+  "C:/Users/User/Documents/3rd sem/graphics_project/src/libbgi_src/palette.cxx" "CMakeFiles/simulator.dir/src/libbgi_src/palette.cxx.obj" "gcc" "CMakeFiles/simulator.dir/src/libbgi_src/palette.cxx.obj.d"
+  "C:/Users/User/Documents/3rd sem/graphics_project/src/libbgi_src/text.cxx" "CMakeFiles/simulator.dir/src/libbgi_src/text.cxx.obj" "gcc" "CMakeFiles/simulator.dir/src/libbgi_src/text.cxx.obj.d"
+  "C:/Users/User/Documents/3rd sem/graphics_project/src/libbgi_src/winbgi.cxx" "CMakeFiles/simulator.dir/src/libbgi_src/winbgi.cxx.obj" "gcc" "CMakeFiles/simulator.dir/src/libbgi_src/winbgi.cxx.obj.d"
+  "C:/Users/User/Documents/3rd sem/graphics_project/src/libbgi_src/winthread.cxx" "CMakeFiles/simulator.dir/src/libbgi_src/winthread.cxx.obj" "gcc" "CMakeFiles/simulator.dir/src/libbgi_src/winthread.cxx.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

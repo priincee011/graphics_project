@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = D:\Cmake\bin\cmake.exe
+CMAKE_COMMAND = "C:\Users\User\Documents\3rd sem\cmake-3.31.5-windows-x86_64\cmake-3.31.5-windows-x86_64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = D:\Cmake\bin\cmake.exe -E rm -f
+RM = "C:\Users\User\Documents\3rd sem\cmake-3.31.5-windows-x86_64\cmake-3.31.5-windows-x86_64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\CPP_Projects\ProjectileSimulator
+CMAKE_SOURCE_DIR = "C:\Users\User\Documents\3rd sem\graphics_project"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\CPP_Projects\ProjectileSimulator\build
+CMAKE_BINARY_DIR = "C:\Users\User\Documents\3rd sem\graphics_project\build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/project.dir/depend.make
@@ -73,63 +73,63 @@ CMakeFiles/project.dir/codegen:
 
 CMakeFiles/project.dir/src/project_src/main.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/project_src/main.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
-CMakeFiles/project.dir/src/project_src/main.cpp.obj: D:/CPP_Projects/ProjectileSimulator/src/project_src/main.cpp
+CMakeFiles/project.dir/src/project_src/main.cpp.obj: C:/Users/User/Documents/3rd\ sem/graphics_project/src/project_src/main.cpp
 CMakeFiles/project.dir/src/project_src/main.cpp.obj: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\CPP_Projects\ProjectileSimulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project.dir/src/project_src/main.cpp.obj"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/project_src/main.cpp.obj -MF CMakeFiles\project.dir\src\project_src\main.cpp.obj.d -o CMakeFiles\project.dir\src\project_src\main.cpp.obj -c D:\CPP_Projects\ProjectileSimulator\src\project_src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\User\Documents\3rd sem\graphics_project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project.dir/src/project_src/main.cpp.obj"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/project_src/main.cpp.obj -MF CMakeFiles\project.dir\src\project_src\main.cpp.obj.d -o CMakeFiles\project.dir\src\project_src\main.cpp.obj -c "C:\Users\User\Documents\3rd sem\graphics_project\src\project_src\main.cpp"
 
 CMakeFiles/project.dir/src/project_src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/project_src/main.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CPP_Projects\ProjectileSimulator\src\project_src\main.cpp > CMakeFiles\project.dir\src\project_src\main.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\User\Documents\3rd sem\graphics_project\src\project_src\main.cpp" > CMakeFiles\project.dir\src\project_src\main.cpp.i
 
 CMakeFiles/project.dir/src/project_src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/project_src/main.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CPP_Projects\ProjectileSimulator\src\project_src\main.cpp -o CMakeFiles\project.dir\src\project_src\main.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\User\Documents\3rd sem\graphics_project\src\project_src\main.cpp" -o CMakeFiles\project.dir\src\project_src\main.cpp.s
 
 CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
-CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj: D:/CPP_Projects/ProjectileSimulator/src/project_src/mainMenu.cpp
+CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj: C:/Users/User/Documents/3rd\ sem/graphics_project/src/project_src/mainMenu.cpp
 CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\CPP_Projects\ProjectileSimulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj -MF CMakeFiles\project.dir\src\project_src\mainMenu.cpp.obj.d -o CMakeFiles\project.dir\src\project_src\mainMenu.cpp.obj -c D:\CPP_Projects\ProjectileSimulator\src\project_src\mainMenu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\User\Documents\3rd sem\graphics_project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj -MF CMakeFiles\project.dir\src\project_src\mainMenu.cpp.obj.d -o CMakeFiles\project.dir\src\project_src\mainMenu.cpp.obj -c "C:\Users\User\Documents\3rd sem\graphics_project\src\project_src\mainMenu.cpp"
 
 CMakeFiles/project.dir/src/project_src/mainMenu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/project_src/mainMenu.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CPP_Projects\ProjectileSimulator\src\project_src\mainMenu.cpp > CMakeFiles\project.dir\src\project_src\mainMenu.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\User\Documents\3rd sem\graphics_project\src\project_src\mainMenu.cpp" > CMakeFiles\project.dir\src\project_src\mainMenu.cpp.i
 
 CMakeFiles/project.dir/src/project_src/mainMenu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/project_src/mainMenu.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CPP_Projects\ProjectileSimulator\src\project_src\mainMenu.cpp -o CMakeFiles\project.dir\src\project_src\mainMenu.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\User\Documents\3rd sem\graphics_project\src\project_src\mainMenu.cpp" -o CMakeFiles\project.dir\src\project_src\mainMenu.cpp.s
 
 CMakeFiles/project.dir/src/project_src/userInput.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/project_src/userInput.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
-CMakeFiles/project.dir/src/project_src/userInput.cpp.obj: D:/CPP_Projects/ProjectileSimulator/src/project_src/userInput.cpp
+CMakeFiles/project.dir/src/project_src/userInput.cpp.obj: C:/Users/User/Documents/3rd\ sem/graphics_project/src/project_src/userInput.cpp
 CMakeFiles/project.dir/src/project_src/userInput.cpp.obj: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\CPP_Projects\ProjectileSimulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project.dir/src/project_src/userInput.cpp.obj"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/project_src/userInput.cpp.obj -MF CMakeFiles\project.dir\src\project_src\userInput.cpp.obj.d -o CMakeFiles\project.dir\src\project_src\userInput.cpp.obj -c D:\CPP_Projects\ProjectileSimulator\src\project_src\userInput.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\User\Documents\3rd sem\graphics_project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project.dir/src/project_src/userInput.cpp.obj"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/project_src/userInput.cpp.obj -MF CMakeFiles\project.dir\src\project_src\userInput.cpp.obj.d -o CMakeFiles\project.dir\src\project_src\userInput.cpp.obj -c "C:\Users\User\Documents\3rd sem\graphics_project\src\project_src\userInput.cpp"
 
 CMakeFiles/project.dir/src/project_src/userInput.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/project_src/userInput.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CPP_Projects\ProjectileSimulator\src\project_src\userInput.cpp > CMakeFiles\project.dir\src\project_src\userInput.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\User\Documents\3rd sem\graphics_project\src\project_src\userInput.cpp" > CMakeFiles\project.dir\src\project_src\userInput.cpp.i
 
 CMakeFiles/project.dir/src/project_src/userInput.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/project_src/userInput.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CPP_Projects\ProjectileSimulator\src\project_src\userInput.cpp -o CMakeFiles\project.dir\src\project_src\userInput.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\User\Documents\3rd sem\graphics_project\src\project_src\userInput.cpp" -o CMakeFiles\project.dir\src\project_src\userInput.cpp.s
 
 CMakeFiles/project.dir/src/project_src/projectile.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/project_src/projectile.cpp.obj: CMakeFiles/project.dir/includes_CXX.rsp
-CMakeFiles/project.dir/src/project_src/projectile.cpp.obj: D:/CPP_Projects/ProjectileSimulator/src/project_src/projectile.cpp
+CMakeFiles/project.dir/src/project_src/projectile.cpp.obj: C:/Users/User/Documents/3rd\ sem/graphics_project/src/project_src/projectile.cpp
 CMakeFiles/project.dir/src/project_src/projectile.cpp.obj: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\CPP_Projects\ProjectileSimulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/src/project_src/projectile.cpp.obj"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/project_src/projectile.cpp.obj -MF CMakeFiles\project.dir\src\project_src\projectile.cpp.obj.d -o CMakeFiles\project.dir\src\project_src\projectile.cpp.obj -c D:\CPP_Projects\ProjectileSimulator\src\project_src\projectile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\User\Documents\3rd sem\graphics_project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/src/project_src/projectile.cpp.obj"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/project_src/projectile.cpp.obj -MF CMakeFiles\project.dir\src\project_src\projectile.cpp.obj.d -o CMakeFiles\project.dir\src\project_src\projectile.cpp.obj -c "C:\Users\User\Documents\3rd sem\graphics_project\src\project_src\projectile.cpp"
 
 CMakeFiles/project.dir/src/project_src/projectile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/project_src/projectile.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CPP_Projects\ProjectileSimulator\src\project_src\projectile.cpp > CMakeFiles\project.dir\src\project_src\projectile.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\User\Documents\3rd sem\graphics_project\src\project_src\projectile.cpp" > CMakeFiles\project.dir\src\project_src\projectile.cpp.i
 
 CMakeFiles/project.dir/src/project_src/projectile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/project_src/projectile.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CPP_Projects\ProjectileSimulator\src\project_src\projectile.cpp -o CMakeFiles\project.dir\src\project_src\projectile.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\User\Documents\3rd sem\graphics_project\src\project_src\projectile.cpp" -o CMakeFiles\project.dir\src\project_src\projectile.cpp.s
 
 # Object files for target project
 project_OBJECTS = \
@@ -150,7 +150,7 @@ project.exe: libsimulator.a
 project.exe: CMakeFiles/project.dir/linkLibs.rsp
 project.exe: CMakeFiles/project.dir/objects1.rsp
 project.exe: CMakeFiles/project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\CPP_Projects\ProjectileSimulator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\User\Documents\3rd sem\graphics_project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -162,6 +162,6 @@ CMakeFiles/project.dir/clean:
 .PHONY : CMakeFiles/project.dir/clean
 
 CMakeFiles/project.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\CPP_Projects\ProjectileSimulator D:\CPP_Projects\ProjectileSimulator D:\CPP_Projects\ProjectileSimulator\build D:\CPP_Projects\ProjectileSimulator\build D:\CPP_Projects\ProjectileSimulator\build\CMakeFiles\project.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\User\Documents\3rd sem\graphics_project" "C:\Users\User\Documents\3rd sem\graphics_project" "C:\Users\User\Documents\3rd sem\graphics_project\build" "C:\Users\User\Documents\3rd sem\graphics_project\build" "C:\Users\User\Documents\3rd sem\graphics_project\build\CMakeFiles\project.dir\DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/project.dir/depend
 

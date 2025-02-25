@@ -5,6 +5,8 @@
 #include <graphics.h>
 #include <cmath>
 #include <cstdio>
+#include <vector> 
+#include <algorithm>
 #include "userInput.h"
 
 
@@ -20,6 +22,11 @@ public:
 
     // actual simulation function
     void simulateProjectile(float initialv, float angle, int maxx, int maxy, bool withDrag);
+    //graphing function
+    
+    void plotGraph(const double* times, const double* vx, const double* vy, int dataSize, int screenWidth, int screenHeight);
+
+    
 
 private:
     double x, y, vx, vy;  // postion and velocity

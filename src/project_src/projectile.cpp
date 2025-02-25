@@ -6,7 +6,7 @@ projectile::~projectile() {}
 
 void projectile::simulateProjectile(float initialv, float angle, int maxx, int maxy, bool withDrag) {
 
-    cleardevice();
+   cleardevice();
     double physicalRadius = 0.1;
     double radianAngle = angle * M_PI / 180.0;
     double TIME_STEP = withDrag ? 0.01 : 0.05;
@@ -30,8 +30,20 @@ void projectile::simulateProjectile(float initialv, float angle, int maxx, int m
     double t = 0, actualMaxHeight = y, actualRange = 0;
     fillellipse(x, y, PROJECTILE_RADIUS, PROJECTILE_RADIUS);
 
-    while (y < (maxy - 50 - PROJECTILE_RADIUS)) {
+    const int maxDataSize = 1000;
+    double times[maxDataSize];
+    double horizVel[maxDataSize];
+    double vertVel[maxDataSize];
 
+    int dataSize = 0;
+    
+    while (y < (maxy - 50 - PROJECTILE_RADIUS) ) {
+       
+        times[dataSize] = t; 
+        horizVel[dataSize] = vx; 
+        vertVel[dataSize] = vy; 
+        dataSize++;
+        
         x += vx * TIME_STEP * xScale;
         y -= vy * TIME_STEP * yScale;
 
@@ -44,6 +56,7 @@ void projectile::simulateProjectile(float initialv, float angle, int maxx, int m
         if (y < actualMaxHeight) actualMaxHeight = y;
         if (y >= (maxy - 50 - PROJECTILE_RADIUS)) actualRange = (x - 90) / xScale;
 
+        
         drawProjectile();
         delay((totalTime / (range / (vx * TIME_STEP))) * 1000);
 
@@ -51,6 +64,9 @@ void projectile::simulateProjectile(float initialv, float angle, int maxx, int m
     }
 
     displayResults(t, withDrag, actualRange, actualMaxHeight, maxHeight, range, maxy, yScale);
+    getch();
+    
+    plotGraph(times, horizVel, vertVel, dataSize, maxx, maxy);
 
 }
 
@@ -81,7 +97,8 @@ void projectile::drawProjectile() {
 }
 
 void projectile::displayResults(double t, bool withDrag, double actualRange, double actualMaxHeight, double maxHeight, double range, int maxy, double yScale) {
-
+    std::vector<double> times;  
+    std::vector<double> heights;  
     char result[100];
     sprintf(result, "Time: %.2f s  Range: %.2f m  Max Height: %.2f m (with Drag: %s)",
             t, withDrag ? actualRange : range,
@@ -89,7 +106,7 @@ void projectile::displayResults(double t, bool withDrag, double actualRange, dou
             withDrag ? "Yes" : "No");
 
     outtextxy(100, 50, result);
-
+    outtextxy(100, 70, "Press any key to view graph of V vs T ");
 }
 
 void projectile::drawScene(int maxx, int maxy, float maxHeight, float range, float xScale, float yScale) {
@@ -104,7 +121,6 @@ void projectile::drawScene(int maxx, int maxy, float maxHeight, float range, flo
     rectangle(97, groundY - 10, 120, groundY);
     // Draw X and Y axis ticks
     drawTicks(maxx, groundY, xScale, yScale);
-
 }
 
 void projectile::drawTicks(int maxx, int groundY, float xScale, float yScale) {
@@ -134,4 +150,110 @@ void projectile::drawTicks(int maxx, int groundY, float xScale, float yScale) {
         outtextxy(0, tickY - 5, label);
 
     }
+}
+
+
+
+
+void projectile::plotGraph(const double* times,
+                             const double* vx,
+                             const double* vy,
+                             int dataSize,
+                             int screenWidth,
+                             int screenHeight) {
+    if (dataSize <= 0) {
+        outtextxy(100, 20, "No graph data available");
+        getch();
+        return;
+    }
+    
+    setbkcolor(WHITE);
+    cleardevice();
+
+    // Determine the maximum values manually.
+    double maxTime = times[0];
+    double maxVx   = vx[0];
+    double maxVy   = vy[0];
+    for (int i = 1; i < dataSize; ++i) {
+        if (times[i] > maxTime)
+            maxTime = times[i];
+        if (vx[i] > maxVx)
+            maxVx = vx[i];
+        if (vy[i] > maxVy)
+            maxVy = vy[i];
+    }
+    double maxVelocity = (maxVx > maxVy) ? maxVx : maxVy;
+    maxVelocity *= 1.2; // Increase the maximum velocity by 20% for margin
+
+    // Set margins to center the graph.
+    int marginLeft   = screenWidth / 4;
+    int marginRight  = screenWidth / 4;
+    int marginTop    = screenHeight / 4;
+    int marginBottom = screenHeight / 4;
+
+    // Compute scaling factors.
+    double xScale = (screenWidth - marginLeft - marginRight) / maxTime;
+    double yScale = (screenHeight - marginTop - marginBottom) / maxVelocity;
+
+    // Draw the axes.
+    line(marginLeft, screenHeight - marginBottom,
+         screenWidth - marginRight, screenHeight - marginBottom); // X-axis
+    line(marginLeft, marginTop,
+         marginLeft, screenHeight - marginBottom); // Y-axis
+
+    // Label the axes.
+    outtextxy(marginLeft + 20, screenHeight - marginBottom + 45, "Time (s)");
+    outtextxy(marginLeft - 20, marginTop - 40, "Velocity (m/s)");
+
+    // Label the tick marks on the X-axis.
+    int numXTicks = 5;
+    char label[16];
+    for (int i = 0; i <= numXTicks; ++i) {
+        double tickValue = i * maxTime / numXTicks;
+        int xTick = marginLeft + static_cast<int>(tickValue * xScale);
+        sprintf(label, "%.2f", tickValue);
+        outtextxy(xTick - 10, screenHeight - marginBottom + 10, label);
+    }
+
+    // Label the tick marks on the Y-axis.
+    int numYTicks = 10;
+    for (int i = 0; i <= numYTicks; ++i) {
+        int yValue = static_cast<int>(i * (maxVelocity / numYTicks));  // Use integer values for Y ticks
+        int yTick = screenHeight - marginBottom - static_cast<int>(yValue * yScale);
+        sprintf(label, "%d", yValue);  // Display as integer
+        outtextxy(marginLeft - 40, yTick - 5, label);
+    }
+
+
+
+
+    
+
+    // Plot vx (horizontal velocity) in red.
+    setcolor(RED);
+    for (int i = 1; i < dataSize; ++i) {
+        int x1 = marginLeft + static_cast<int>(times[i - 1] * xScale);
+        int y1 = screenHeight - marginBottom - static_cast<int>(vx[i - 1] * yScale);
+        int x2 = marginLeft + static_cast<int>(times[i] * xScale);
+        int y2 = screenHeight - marginBottom - static_cast<int>(vx[i] * yScale);
+        line(x1, y1, x2, y2);
+    }
+
+    // Plot vy (vertical velocity) in blue.
+    setcolor(BLUE);
+    for (int i = 1; i < dataSize; ++i) {
+        int x1 = marginLeft + static_cast<int>(times[i - 1] * xScale);
+        int y1 = screenHeight - marginBottom - static_cast<int>(vy[i - 1] * yScale);
+        int x2 = marginLeft + static_cast<int>(times[i] * xScale);
+        int y2 = screenHeight - marginBottom - static_cast<int>(vy[i] * yScale);
+        line(x1, y1, x2, y2);
+    }
+
+    // Add a legend.
+    setcolor(RED);
+    outtextxy(screenWidth - marginRight - 140, marginTop + 20, "Vx (Horizontal)");
+    setcolor(BLUE);
+    outtextxy(screenWidth - marginRight - 140, marginTop + 40, "Vy (Vertical)");
+
+    
 }

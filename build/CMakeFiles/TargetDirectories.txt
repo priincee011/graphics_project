@@ -1,4 +1,4 @@
-D:/CPP_Projects/ProjectileSimulator/build/CMakeFiles/simulator.dir
-D:/CPP_Projects/ProjectileSimulator/build/CMakeFiles/project.dir
-D:/CPP_Projects/ProjectileSimulator/build/CMakeFiles/edit_cache.dir
-D:/CPP_Projects/ProjectileSimulator/build/CMakeFiles/rebuild_cache.dir
+C:/Users/User/Documents/3rd sem/graphics_project/build/CMakeFiles/simulator.dir
+C:/Users/User/Documents/3rd sem/graphics_project/build/CMakeFiles/project.dir
+C:/Users/User/Documents/3rd sem/graphics_project/build/CMakeFiles/edit_cache.dir
+C:/Users/User/Documents/3rd sem/graphics_project/build/CMakeFiles/rebuild_cache.dir
